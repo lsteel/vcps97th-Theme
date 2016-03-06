@@ -18,7 +18,7 @@ get_header(); ?>
         $thumb_id = get_post_thumbnail_id();
         $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
       ?>
-      <img src="<?php if (has_post_thumbnail()) { echo $thumb_url[0]; } ?>" class="hero-right-background vert-center hor-center off-center-left" />
+      <img src="<?php if (has_post_thumbnail()) { echo $thumb_url[0]; } ?>" class="hero-right-background" />
       <img src="<?php echo esc_url( get_template_directory_uri() . '/images/triangle-right-photo-cover.png' ); ?>" class="right-cover" />
     </div>
     <img src="<?php echo esc_url( get_template_directory_uri() . '/images/triangle-left-photo-cover.png' ); ?>" class="left-cover" />
