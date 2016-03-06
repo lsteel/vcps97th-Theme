@@ -1,0 +1,154 @@
+// main: main.styl
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px){} //remove brackets before using section
+
+/* Larger than phablet */
+@media (min-width: 550px)
+
+  .site-header
+    height 92px
+
+  .site-branding
+    position absolute
+    top 11px
+    left 28px
+    img
+      height auto
+      width 242px
+      max-width none
+
+  .menu-toggle, .main-navigation.toggled ul
+    height 92px
+    width 92px
+    font-size 250%
+
+/* Larger than tablet */
+@media (min-width: 750px)
+
+  .hero-wrapper
+    min-height 400px
+    text-align left
+    h1
+      padding 3px 0 10px
+      max-width 95%
+    h2
+      padding 3px 0 50px
+      max-width 90%
+    p
+      max-width 47%
+      font-weight 300
+
+  .hero-left
+    left 0
+    width 58%
+    background none
+
+  .hero-right
+    right 0
+    width 50%
+
+  .grid-sizer
+    width: 33.33%
+
+  .grid-item
+    margin-bottom: 10px
+    width: 33.33%
+
+  .grid-item-featured
+    width: 66.66%
+    .thumbnail-wrapper
+      height 437px
+
+  .map-container
+    width 48%
+    &.map-left
+      float left
+      margin-bottom 0
+    &.map-right
+      float right
+      margin-bottom 0
+
+  .map-text-container
+    h3
+      margin-top 60%
+
+  .contact-info-wrapper
+    display flex
+
+  .site-footer
+    background #4D4D4D
+    text-align left
+    img
+      position absolute
+      top 50%
+      left 50%
+      margin-top -52px
+      margin-left -49px
+      width 98px
+
+  .footer-navigation
+    margin-top 0
+    font-size 100%
+    font-weight 400
+    ul
+      li
+        padding 0
+    > div
+      display inline-block
+      vertical-align top
+
+  .footer-one
+    float left
+    left 5%
+
+  .footer-two
+    float left
+    left 15%
+
+  .footer-three
+    float right
+    right 15%
+
+  .footer-four
+    float right
+    right 5%
+
+/* Larger than desktop */
+@media (min-width: 1024px)
+
+  html, body
+    font-size 16px
+
+  .max-width-wrapper
+    padding 40px 60px 30px
+
+  .site-header
+    height 92px
+
+  .site-branding
+    top 11px
+    left 28px
+    img
+      width 242px
+
+  .menu-toggle, .main-navigation.toggled ul
+    display none
+
+  .phone-container
+    display block
+
+  .raq-btn-container
+    display inline-block
+
+  .hero-right img.right-cover
+    display block
+    width auto
+
+/* Turn on background video */
+@media (min-width: 1025px){} //remove brackets before using section
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {} //remove brackets before using section
