@@ -9,7 +9,40 @@ var jqueryScript = function() {
         // use element for option
         columnWidth: '.grid-sizer',
         percentPosition: true,
-      })
+      });
+
+      $('.nav-links').css({
+        'opacity' : '0'
+      });
+
+      // infinitescroll() is called on the element that surrounds
+      // the items you will be loading more of
+      $('#content').infinitescroll({
+
+        navSelector  : "nav.navigation",
+        // selector for the paged navigation (it will be hidden)
+        nextSelector : "nav.navigation .nav-links .nav-previous a",
+        // selector for the NEXT link (to page 2)
+        itemSelector : ".grid-item"
+        // selector for all items you'll retrieve
+      },function(arrayOfNewElems){
+
+        // optional callback when new content is successfully loaded in.
+
+        // keyword `this` will refer to the new DOM content that was just added.
+        // as of 1.5, `this` matches the element you called the plugin on (e.g. #content)
+        //                   all the new elements that were found are passed in as an array
+
+        var elems = $();
+
+        $('#content > .grid-item').each(function(index, el) {
+          elems = elems.add(el);
+        });
+
+        elems.appendTo('.grid');
+
+        $('.grid').masonry('appended', elems);
+      });
 
       var mobileScreen = false;
 

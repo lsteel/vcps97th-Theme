@@ -20,7 +20,8 @@
 <?php wp_enqueue_script('jquery'); ?>
 <?php wp_head(); ?>
 <script src="<?php echo esc_url( get_template_directory_uri() . '/js/velocity.js' ); ?>"></script>
-<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+<script src="<?php echo esc_url( get_template_directory_uri() . '/js/masonry.pkgd.min.js' ); ?>"></script>
+<script src="<?php echo esc_url( get_template_directory_uri() . '/js/jquery.infinitescroll.min.js' ); ?>"></script>
 <script src="<?php echo esc_url( get_template_directory_uri() . '/js/main.js' ); ?>"></script>
 </head>
 <body <?php body_class(); ?>>
@@ -28,8 +29,11 @@
 <div id="page" class="hfeed site">
   <header id="masthead" class="site-header" role="banner">
     <div class="max-width-wrapper">
+      <div class="header-shadow header-shadow-left"></div>
+      <div class="header-shadow header-shadow-right"></div>
       <div class="site-branding">
-        <a href="/"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/vicaps-header.png' ); ?>" alt="Vicaps Header Logo" /></a>
+        <img src="<?php echo esc_url( get_template_directory_uri() . '/images/logo-shadow.png' ); ?>" alt="logo shadow" class="logo-shadow" />
+        <a href="/"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/vicaps-header.png' ); ?>" alt="Vicaps Header Logo" class="header-logo" /></a>
       </div><!-- .site-branding -->
 
       <div class="nav-container">
