@@ -71,6 +71,8 @@
     width 50%
 
   .blog-hero
+    .max-width-wrapper
+      padding 40px 10px 30px
     h1
       max-width 43%
     .entry-meta
@@ -83,6 +85,93 @@
     .hero-right
       right 0
       width 65%
+
+  .section-two
+    margin-bottom 80px
+    background $dark-grey
+    .max-width-wrapper
+      display flex
+      padding 0px
+      max-width 1024px
+    .section-left, .section-right
+      width 50%
+    .section-left
+      -webkit-box-shadow none
+      -moz-box-shadow none
+      box-shadow none
+    .section-right
+      padding 30px 0 20px 20px
+      text-align left
+      background none
+      h2
+        font-size 225%
+        font-weight 400
+      p
+        margin 0
+        width 80%
+
+  .imac
+    position absolute
+    top -23px
+    left auto
+    right 0
+    width auto
+    height auto
+    max-width 100%
+
+  .macbook-air
+    display none
+
+  .customers-section
+    padding 70px 0
+    h2
+      padding 0 0 30px
+      margin 0 auto
+      width 40%
+      max-width 680px
+      font-size 225%
+      font-weight 400
+    p
+      margin 0 auto
+      width 80%
+      max-width 680px
+      font-size 125%
+      font-weight 300
+
+  .customer-logos
+    width 85%
+    flex-direction row
+    flex-wrap wrap-reverse
+    img
+      margin 10px 15px
+    .buzzfeed-logo
+      order 1
+    .disney-logo
+      order 2
+    .pg-logo
+      order 3
+    .microsoft-logo
+      order 4
+    .warner-bros-logo
+      order 5
+    .amazon-logo
+      order 6
+    .coast-guard-logo
+      order 7
+    .pg-logo, .warner-bros-logo, .coast-guard-logo
+      display inline-block
+
+  .dual-section
+    display flex
+    flex-direction row
+    align-items stretch
+    .section-left, .section-right
+      display flex
+      width 50%
+    .section-left .content-wrapper
+      margin 0 0 0 auto
+    .section-right .content-wrapper
+      margin 0 auto 0 0
 
   .grid-sizer
     width: 33.33%
@@ -201,9 +290,6 @@
   html, body
     font-size 16px
 
-  body
-    padding-top 60px
-
   .max-width-wrapper
     padding 40px 60px 30px
 
@@ -229,8 +315,8 @@
     display block
     width auto
 
-/* Turn on background video */
-@media (min-width: 1025px){} //remove brackets before using section
+  .dual-section .section-right .content-wrapper span
+      display none
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {} //remove brackets before using section

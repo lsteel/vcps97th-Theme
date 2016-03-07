@@ -149,6 +149,9 @@ img
   //box-shadow 0 8px 60px 0 rgba(0,0,0,.15)
   z-index 9999
 
+.admin-bar .site-header
+  top 32px
+
 .header-shadow
   position absolute
   top 41px
@@ -241,6 +244,9 @@ img
 
 //HOME PAGE
 
+.section, .dual-section, .customer-section
+  height auto
+
 .box-btn
   display inline-block
   background $orange
@@ -268,36 +274,144 @@ img
     .triangle-text svg polyline
       fill $lgt-blue
 
-.section-back-left, .section-back-right
-  position absolute
-  display inline-block
-  width 50%
-  height 100%
-
-.section-back-left
-  left 0
-  background $green
-
-.section-back-right
-  right 0
-  background $dark-grey
-
-.section-left, .section-right
-  display inline-block
-  width 50%
-  height auto
+.customers-section
+  padding 40px 0
   text-align center
-  color $white
+  h2
+    padding 0 0 30px
+    margin 0 auto
+    width 80%
+    max-width 680px
+    font-size 225%
+    font-weight 400
+  p
+    margin 0 auto
+    width 80%
+    max-width 680px
+    font-size 125%
+    font-weight 300
+  hr
+    margin 50px auto
+    width 112px
+    height 2px
+    background $grey
 
-.section-left p
-  color $grey
+.customer-logos
+  display flex
+  margin 0 auto
+  width 85%
+  flex-direction column-reverse
+  flex-wrap wrap
+  justify-content center
+  align-content center
+  height auto
+  img
+    display block
+    margin 10px auto
+    height 65px
+    width auto
+  .buzzfeed-logo
+    order 1
+  .disney-logo
+    order 2
+  .microsoft-logo
+    order 4
+  .amazon-logo
+    order 3
+  .pg-logo, .warner-bros-logo, .coast-guard-logo
+    display none
 
-.section-right .raq-btn
-  background-color $dark-grey
-  &:hover
-    color $dark-grey
-    .triangle-text svg polyline
-      fill $dark-grey
+.section-two
+  .max-width-wrapper
+    padding 0px 0px 30px
+    max-width none
+  .section-left, .section-right
+    display inline-block
+    width 100%
+    color $white
+  .section-left
+    -webkit-box-shadow: inset 0px 4px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 0px 4px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: inset 0px 4px 5px 0px rgba(0,0,0,0.25);
+    z-index 9998
+  .section-right
+    padding 30px 0 5px
+    text-align center
+    background $dark-grey
+    h2
+      padding-bottom 20px
+      font-size 188%
+      font-weight 400
+    p
+      margin 0 auto
+      padding-bottom 30px
+      width 76%
+      font-size 94%
+    .raq-btn
+      color $white
+      border 3px solid $orange
+      background-color $dark-grey
+      &:hover
+        background-color $orange
+        color $dark-grey
+        border-color $orange
+        .triangle-text svg polyline
+          fill $dark-grey
+
+.imac
+  top 57px
+  left 20px
+  width 200px
+  height auto
+
+.macbook-air
+  position absolute
+  bottom -39px
+  right 0
+  width 190px
+  height auto
+
+.section-three
+  display flex
+  flex-direction row
+  justify-content: center
+
+.dual-section
+  .section-left, .section-right
+    display inline-block
+    width 100%
+    height auto
+    text-align center
+    color $white
+  .section-left
+    background $green
+    height auto
+  .section-right
+    background $dark-grey
+  .section-left .content-wrapper, .section-right .content-wrapper
+    width 90%
+    padding 40px 20px
+    margin 0 auto
+    max-width 512px
+    h2
+      font-size 200%
+      font-weight 400
+    p
+      margin 0 auto
+      padding 20px 0 40px 0
+      max-width 345px
+      font-size 113%
+      line-height 1.2
+  .section-left p
+    color $grey
+  .section-right .raq-btn
+    background-color $dark-grey
+    &:hover
+      color $dark-grey
+      .triangle-text svg polyline
+        fill $dark-grey
+
+
 
 
 
