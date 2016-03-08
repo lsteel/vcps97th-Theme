@@ -26,7 +26,7 @@
     </div>
   </footer><!-- #colophon -->
 </div><!-- #page -->
-
+<div class="screen-resolution"><p></p></div>
 <?php wp_footer(); ?>
 </body>
 </html>

@@ -44,6 +44,11 @@ var jqueryScript = function() {
         $('.grid').masonry('appended', elems);
       });
 
+      var winWidth = $(window).width();
+      var winHeight = $(window).height();
+
+      showResolution();
+
       var mobileScreen = false;
 
       setLinkActive();
@@ -114,6 +119,9 @@ var jqueryScript = function() {
       }
 
       $(window).resize(function() {
+        winWidth = $(window).width();
+        winHeight = $(window).height();
+        showResolution();
         everySize();
       });
 
@@ -132,6 +140,10 @@ var jqueryScript = function() {
         gplusLink.attr("href", "https://plus.google.com/share?url=" + url);
         twLink.attr("href", "http://twitter.com/share?text=" + titleEncode + "%20-%20@PNMsoft%20-%20&url=" + url);
         fbLink.attr("href", "https://www.facebook.com/sharer/sharer.php?u=" + url);
+      }
+
+      function showResolution() {
+        $('.screen-resolution p').text(winWidth + ' x ' + winHeight);
       }
 
 
